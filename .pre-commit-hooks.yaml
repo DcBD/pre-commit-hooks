@@ -43,7 +43,8 @@
   entry: lowess/yasha:latest
 
 - id: npm-test
-  name: Run npm tess
-  description: runs npm tests
+  name: Run npm tests
+  language: system
+  files: '\.test.(ts|tsx)$'
+  always_run: true
   entry: npm run test
-  language: node
