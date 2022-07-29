@@ -41,3 +41,9 @@
   exclude: .*
   always_run: true
   entry: lowess/yasha:latest
+
+- id: npm-test
+  name: Run npm tess
+  description: runs npm tests
+  entry: npm run test
+  language: node
